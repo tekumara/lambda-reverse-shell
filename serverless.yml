@@ -1,0 +1,12 @@
+service: shell
+
+provider:
+  name: aws
+  region: ap-southeast-2
+  runtime: python3.6
+  timeout: 300
+
+functions:
+  shell:
+    handler: shell_handler.shell
+
